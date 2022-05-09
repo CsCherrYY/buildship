@@ -6,36 +6,36 @@ import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.gradle
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.*
 
 val individualBuildsForPhase1 = listOf(
-    IndividualScenarioBuildType(ScenarioType.SANITY_CHECK, OS.LINUX, EclipseVersion.ECLIPSE4_13, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8) // TODO use latest Eclipse version for sanity check coverage
+    IndividualScenarioBuildType(ScenarioType.SANITY_CHECK, OS.WINDOWS, EclipseVersion.ECLIPSE4_13, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8) // TODO use latest Eclipse version for sanity check coverage
 )
 val individualBuildsForPhase2 = listOf(
-    IndividualScenarioBuildType(ScenarioType.BASIC_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_8, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
-    IndividualScenarioBuildType(ScenarioType.BASIC_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_20, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
+    IndividualScenarioBuildType(ScenarioType.BASIC_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_8, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
+    IndividualScenarioBuildType(ScenarioType.BASIC_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_20, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
     IndividualScenarioBuildType(ScenarioType.BASIC_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_8, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
     IndividualScenarioBuildType(ScenarioType.BASIC_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_22, eclipseRuntimeJdk = Jdk.OPEN_JDK_11)
 )
 val individualBuildsForPhase3 = listOf(
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_8, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_9, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_10, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_11, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_12, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_13, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_14, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_15, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_16, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_17, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_18, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_19, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_20, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_21, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
-    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.LINUX, EclipseVersion.ECLIPSE4_22, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_8, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_9, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_10, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_11, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_12, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_13, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_14, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_15, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_16, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_17, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_18, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_19, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_20, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_21, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
+    IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_22, eclipseRuntimeJdk = Jdk.OPEN_JDK_11),
 
     IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_8, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8),
     IndividualScenarioBuildType(ScenarioType.FULL_COVERAGE, OS.WINDOWS, EclipseVersion.ECLIPSE4_22, eclipseRuntimeJdk = Jdk.OPEN_JDK_11)
 )
 val individualBuildsForPhase4 = listOf(
-    IndividualScenarioBuildType(ScenarioType.CROSS_VERSION, OS.LINUX, EclipseVersion.ECLIPSE4_8, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8) // TODO use latest Eclipse version for cross-version coverage
+    IndividualScenarioBuildType(ScenarioType.CROSS_VERSION, OS.WINDOWS, EclipseVersion.ECLIPSE4_8, eclipseRuntimeJdk = Jdk.ORACLE_JDK_8) // TODO use latest Eclipse version for cross-version coverage
 )
 
 val tb1_1 = CheckpointBuildType("Sanity Check (Phase 1/1)", individualBuildsForPhase1, null)
