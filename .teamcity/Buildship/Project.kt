@@ -233,12 +233,12 @@ object Project : Project({
 })
 
 object IndividualBuilds : Project({
-    createId("Individual Coverage Scenarios1")
+    createId("Individual Coverage Scenarios")
     buildTypesWithOrder(individualBuildsForPhase1 + individualBuildsForPhase2 + individualBuildsForPhase3 + individualBuildsForPhase4)
 })
 
 object Checkpoints : Project({
-    createId("Checkpoints1")
+    createId("Checkpoints")
     buildTypesWithOrder(listOf(
         tb1_1,
         tb1_2, tb2_2,
@@ -247,7 +247,7 @@ object Checkpoints : Project({
 })
 
 object Promotions : Project({
-    createId("Promotions1")
+    createId("Promotions")
     buildTypesWithOrder(listOf(unsafeSnapshotPromotion, snapshotPromotion, milestonePromotion, releasePromotion))
 })
 
