@@ -13,7 +13,7 @@ fun BuildType.addCredentialsLeakFailureCondition() {
         add {
             failOnText {
                 conditionType = BuildFailureOnText.ConditionType.CONTAINS
-                pattern = "%unmaskedFakeCredentials%"
+                pattern = "ERROR"
                 failureMessage = "This build might be leaking credentials"
                 reverse = false
                 stopBuildOnFailure = true
